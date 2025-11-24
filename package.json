@@ -9,6 +9,7 @@
     "test": "ng test",
     "serve:ssr:catalog_films": "node dist/catalog_films/server/server.mjs"
   },
+  "type": "module",
   "prettier": {
     "printWidth": 100,
     "singleQuote": true,
