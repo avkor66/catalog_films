@@ -1,25 +1,32 @@
-import {Component, inject} from '@angular/core';
+import {Component, inject, OnInit} from '@angular/core';
 import {FilmCard} from "../film-card/film-card";
 import {FilmService} from "../../services/film.service";
 import {Film} from "../../interfaces/film.interface";
+import {Observable, tap} from "rxjs";
+import {AsyncPipe} from "@angular/common";
+import {ErrorHandler} from "../error-handler/error-handler";
+import {FormsModule} from "@angular/forms";
+import {FilterFilmsPipe} from "../../pipes/filter-films-pipe";
 
 @Component({
   selector: 'app-catalog-films',
   imports: [
-    FilmCard
+    FilmCard,
+    AsyncPipe,
+    ErrorHandler,
+    FormsModule,
+    FilterFilmsPipe
   ],
   templateUrl: './catalog-films.html',
   styleUrl: './catalog-films.scss',
 })
-export class CatalogFilms {
+export class CatalogFilms implements OnInit {
   filmService = inject(FilmService);
 
-  films: Film[] = []
+  seek = ''
 
-  constructor() {
-    this.filmService.getFilms()
-      .subscribe((films) => {
-        this.films = films
-      });
+  films$: Observable<Film[]> | undefined;
+  ngOnInit() {
+    this.films$ = this.filmService.getFilms()
   }
 }

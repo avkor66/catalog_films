@@ -1,13 +1,24 @@
 <div class="catalog__wrapper">
+    <app-error-handler></app-error-handler>
     <div class="catalog-header">
         <div class="catalog-header__title">Каталог фильмов</div>
         <div class="catalog-header__search">
-            <input type="text" placeholder="Поиск фильмов...">
+            <input
+                type="text"
+                placeholder="Поиск фильмов..."
+                class="search-input"
+                [(ngModel)]="seek"
+            >
         </div>
     </div>
-    <div class="catalog-content">
-        @for (film of films; track film.id) {
-            <app-film-card></app-film-card>
-        }
-    </div>
+    @let currentFilms = films$ | async;
+    @if (currentFilms) {
+        <div class="catalog-content">
+            @for (film of currentFilms | filterFilms: seek; track film.id) {
+                <app-film-card
+                    [film]="film"
+                ></app-film-card>
+            }
+        </div>
+    }
 </div>

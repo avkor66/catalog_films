@@ -1,0 +1,10 @@
+@let currentError = errorService.error$ | async;
+@if (currentError) {
+    <div class="error-message">
+        <p> {{ currentError }} </p>
+        <button
+            class="error-button"
+            (click)="errorService.cleared()"
+        >&times;</button>
+    </div>
+}
