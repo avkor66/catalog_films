@@ -1,0 +1,184 @@
+{
+  "films": [
+    {
+      "id": 1,
+      "title": "Начало",
+      "year": 2010,
+      "genres": ["Фантастика", "Боевик", "Приключения"],
+      "rating": 8.7,
+      "description": "Вор, который крадет корпоративные секреты с помощью технологии совместного использования сновидений, получает задание, которое может вернуть ему его жизнь, но только если он сможет добиться невозможного - 'внедрения'.",
+      "posterUrl": "data:image/jpeg;base64,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"
+    },
+    {
+      "id": 2,
+      "title": "Побег из Шоушенка",
+      "year": 1994,
+      "genres": ["Драма"],
+      "rating": 9.1,
+      "description": "Два приговоренных к тюремному заключению человека находят утешение и искупление через акты общего человеческого приличия на протяжении ряда лет.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/yS6d1zV9yQ82dF3x0Kqg8D50yN2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Криминальное чтиво",
+      "year": 1994,
+      "genres": ["Криминал", "Драма"],
+      "rating": 8.9,
+      "description": "Жизни двух мафиозных киллеров, боксера, жены гангстера и пары ресторанных бандитов переплетаются в четырех криминальных историях с нелинейным повествованием.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/bJ83wX3iCgY3c51q8dK3281uK0z.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Темный рыцарь",
+      "year": 2008,
+      "genres": ["Боевик", "Криминал", "Драма"],
+      "rating": 9.0,
+      "description": "Когда на горизонте Готэма появляется новый злодей, известный как Джокер, Бэтмен должен принять один из величайших психологических и физических тестов на свою способность бороться с несправедливостью.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/98MhR9LzYm5pWwKjY1Q6jV5j2K2.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Список Шиндлера",
+      "year": 1993,
+      "genres": ["Биография", "Драма", "История"],
+      "rating": 8.9,
+      "description": "Владелец фабрики Оскар Шиндлер постепенно становится обеспокоен судьбой своих еврейских рабочих во время Второй мировой войны.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/n9n19lH043w0vPz0zWz8L8m7K0z.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Форрест Гамп",
+      "year": 1994,
+      "genres": ["Драма", "Мелодрама"],
+      "rating": 8.8,
+      "description": "История жизни Форреста Гампа, наивного, но добросердечного человека, который, тем не менее, оказывает значительное влияние на некоторые из величайших событий второй половины 20-го века.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/a39Gk3v1n2r3g2WjRjF5M6pL5sD.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Бойцовский клуб",
+      "year": 1999,
+      "genres": ["Драма", "Триллер"],
+      "rating": 8.7,
+      "description": "Безымянный рассказчик, страдающий бессонницей, и загадочный продавец мыла организуют подпольный бойцовский клуб, который превращается в нечто гораздо большее.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/c2sL6gI2yYj10bL139H7sRz7zB0.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Властелин колец: Возвращение короля",
+      "year": 2003,
+      "genres": ["Приключения", "Драма", "Фэнтези"],
+      "rating": 8.9,
+      "description": "Гэндальф и Арагорн ведут мир Людей против армии Саурона, чтобы отвлечь его внимание от Фродо и Сэма, когда они приближаются к Роковой горе с Кольцом Всевластья.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/1K8oG1rF14S0j2u2b24H9t7s6L4.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Хороший, плохой, злой",
+      "year": 1966,
+      "genres": ["Вестерн"],
+      "rating": 8.8,
+      "description": "Бродяга, бандит и наемный убийца объединяются в неравной борьбе, чтобы найти спрятанное золото Конфедерации во время жестокой гражданской войны.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/v9QhXgK9u5lS77uY8P5H5d4yB4k.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Матрица",
+      "year": 1999,
+      "genres": ["Боевик", "Научная фантастика"],
+      "rating": 8.7,
+      "description": "Когда компьютерщик Томас Андерсон узнает, что его мир — это всего лишь имитация, созданная злонамеренными машинами, он присоединяется к загадочным повстанцам и начинает восстание.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/409v2g5s5w86x9Sg7m6eQy12gY0.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Семь самураев",
+      "year": 1954,
+      "genres": ["Приключения", "Драма", "История"],
+      "rating": 8.6,
+      "description": "В Японии 16-го века обедневшие фермеры нанимают семерых безработных самураев для защиты своей деревни от грабителей.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/6vS8eW3oQ5LhVq1k8L091D5K7xQ.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Город бога",
+      "year": 2002,
+      "genres": ["Криминал", "Драма"],
+      "rating": 8.6,
+      "description": "В неблагополучном районе Рио-де-Жанейро два парня идут разными путями: один становится фотографом, другой — наркобароном.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/9b4J1H667z0mR9898z9v5i9d7W4.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Интерстеллар",
+      "year": 2014,
+      "genres": ["Приключения", "Драма", "Научная фантастика"],
+      "rating": 8.6,
+      "description": "Команда исследователей путешествует через червоточину в космосе в попытке обеспечить выживание человечества.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/7aZ3dG3Qo9oV6O4gUe2z7d6eK40.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Зеленая миля",
+      "year": 1999,
+      "genres": ["Криминал", "Драма", "Фэнтези"],
+      "rating": 8.6,
+      "description": "Сотрудник тюрьмы для смертников в 1930-х годах встречает заключенного афроамериканца с удивительным секретным даром.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/aH6X9s1e6Xv4K6G1vYm1t9D3P7e.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Психо",
+      "year": 1960,
+      "genres": ["Ужасы", "Триллер", "Детектив"],
+      "rating": 8.5,
+      "description": "Секретарь из Аризоны присваивает деньги клиента и бежит из города, чтобы спрятаться в уединенном мотеле, которым управляет молодой человек, находящийся под властью своей матери.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/u3G2tA2g1l8s5g4d3Y60m2s4q2c.jpg"
+    },
+    {
+      "id": 16,
+      "title": "Паразиты",
+      "year": 2019,
+      "genres": ["Комедия", "Драма", "Триллер"],
+      "rating": 8.5,
+      "description": "Жадность и классовая дискриминация угрожают новым отношениям между богатой семьей Пак и бедной семьей Ким.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/xVqYq2eX9k7xV5Q9J57hJ0M4l7U.jpg"
+    },
+    {
+      "id": 17,
+      "title": "Леон",
+      "year": 1994,
+      "genres": ["Боевик", "Криминал", "Драма"],
+      "rating": 8.5,
+      "description": "Профессиональный киллер неохотно берет под свою опеку 12-летнюю девочку, чья семья была убита коррумпированным агентом УБН.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/x5j9vD4qV6Lz21q6s1h1p84mDkF.jpg"
+    },
+    {
+      "id": 18,
+      "title": "Король Лев",
+      "year": 1994,
+      "genres": ["Анимация", "Приключения", "Драма"],
+      "rating": 8.5,
+      "description": "Молодой лев-принц убегает в изгнание после смерти своего отца, но должен вернуться, чтобы оспорить трон своего коварного дяди и спасти свою родину.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/oR50W2sX7X4mD8yT8S3FqG3f4w0.jpg"
+    },
+    {
+      "id": 19,
+      "title": "Гладиатор",
+      "year": 2000,
+      "genres": ["Боевик", "Приключения", "Драма"],
+      "rating": 8.5,
+      "description": "Бывший римский генерал стремится отомстить коррумпированному императору, который убил его семью и отправил его в рабство.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/v7r5bTq2p0JjYQWz0sX4w0p6oOQ.jpg"
+    },
+    {
+      "id": 20,
+      "title": "Аватар",
+      "year": 2009,
+      "genres": ["Боевик", "Приключения", "Фантастика"],
+      "rating": 8.5,
+      "description": "Морской пехотинец-паралитик отправляется на Пандору с особой миссией, но разрывается между выполнением своего долга и защитой мира, в котором он чувствует себя как дома.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/k9b6574vE9lW4r7z7b6W6J5xK0Q.jpg"
+    }
+  ]
+}

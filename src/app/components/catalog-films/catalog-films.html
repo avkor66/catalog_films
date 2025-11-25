@@ -1,0 +1,13 @@
+<div class="catalog__wrapper">
+    <div class="catalog-header">
+        <div class="catalog-header__title">Каталог фильмов</div>
+        <div class="catalog-header__search">
+            <input type="text" placeholder="Поиск фильмов...">
+        </div>
+    </div>
+    <div class="catalog-content">
+        @for (film of films; track film.id) {
+            <app-film-card></app-film-card>
+        }
+    </div>
+</div>
