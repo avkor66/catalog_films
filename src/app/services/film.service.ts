@@ -1,7 +1,7 @@
 import {inject, Injectable} from "@angular/core";
 import {HttpClient, HttpErrorResponse, HttpParams} from "@angular/common/http";
 import {Film} from "../interfaces/film.interface";
-import {catchError, delay, Observable, retry, throwError} from "rxjs";
+import {catchError, delay, retry, throwError} from "rxjs";
 import {ErrorService} from "./error.service";
 
 @Injectable({providedIn: 'root'})
@@ -25,7 +25,11 @@ export class FilmService {
       params: new HttpParams({
         fromObject: {id}
       })
-    });
+    }).pipe(
+      delay(100),
+      retry(3),
+      catchError(this.handleError.bind(this))
+    );
   }
 
   private handleError(error: HttpErrorResponse) {
