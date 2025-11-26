@@ -20,5 +20,12 @@
                 ></app-film-card>
             }
         </div>
+    } @else {
+        <h3>Фильмы не найдены...</h3>
+    }
+    @if ( modalService.isVisible$ | async ) {
+        <app-modal>
+            <app-modal-card></app-modal-card>
+        </app-modal>
     }
 </div>

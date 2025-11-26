@@ -1,5 +1,4 @@
 .film-card {
-  //border: 5px solid var(--light-color);
   border-radius: 10px;
   background-color: var(--light-color);
   display: flex;
@@ -8,42 +7,66 @@
   align-items: center;
   width: 100%;
   max-width: 400px;
+  cursor: pointer;
+  box-shadow: 4px 4px 6px 3px rgba(var(--black), 0.2);
+  transition: transform 1s ease, box-shadow 1.2s ease;
   &__name {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   &__poster {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     width: 100%;
     overflow: hidden;
   }
+  &:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 2px 8px 12px 6px rgba(var(--black), 0.3);
+  }
 }
 
 .poster-image {
   max-width: 400px;
   width: 100%;
-
 }
+
 .card-title {
+  display: flex;
+  align-items: center;
   margin-top: 5px;
-  margin-bottom: 10px;
-  font-size: 32px;
-  line-height: 24px;
+  margin-bottom: 5px;
+  font-size: 28px;
+  line-height: 20px;
   font-weight: 800;
+  text-align: center;
+  height: 50px;
 }
 
 .card-subtitle {
   font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-weight: 400;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 499px) {
-  .film-card, .poster-image {
-    max-width: 100%;
+  .film-card {
+    max-width: calc(100% - 20px);
+    &__poster {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
   }
-
+  .poster-image {
+    width: 80%;
+  }
+  .card-title {
+    font-size: 22px;
+    height: 40px;
+  }
+  .card-subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }

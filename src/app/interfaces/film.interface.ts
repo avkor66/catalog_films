@@ -3,7 +3,7 @@ export interface Film {
   title: string;
   description: string;
   posterUrl: string;
-  genre: string[];
+  genres: string[];
   year: number;
   rating: number;
 }

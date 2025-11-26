@@ -1,0 +1,27 @@
+<div class="modal-content">
+    @let film = filmDetail$ | async;
+    @if (film) {
+
+        <img [src]="film.posterUrl" alt="poster" class="modal-poster">
+        <div class="modal-detail">
+            <div class="detail-title">{{ film.title }}</div>
+            <div class="detail-year">{{ film.year }}</div>
+            <div class="detail-genres">
+                @for (genre of film.genres; track genre) {
+                    <div class="genre">{{ genre }}</div>
+                }
+            </div>
+                <div class="detail-description">{{film.description}}</div>
+            <button
+                class="modal-close"
+                (click)="modalService.close()"
+            >
+            </button>
+            <div class="modal-rating">{{ film.rating }}</div>
+        </div>
+
+    } @else {
+        <h3>Данные о фильме утеряны при загрузке...</h3>
+    }
+</div>
+

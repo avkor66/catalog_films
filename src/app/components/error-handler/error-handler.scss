@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
+  background: var(--red-color);
   border-radius: 10px;
-  color: white;
+  color: var(--white-color);
   position: absolute;
   width: 400px;
   padding: 10px;
@@ -18,8 +18,8 @@
 }
 
 .error-button {
-  color: white;
-  background-color: red;
+  color: var(--white-color);
+  background-color: var(--red-color);
   opacity: 0.5;
   border: none;
   font-size: 36px;
@@ -27,10 +27,12 @@
 }
 
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0.6;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 0.6; }
+}
+
+@media (max-width: 499px) {
+  .error-message {
+    width: 90%;
+   }
 }

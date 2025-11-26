@@ -1,14 +1,18 @@
 @use "fonts";
 
 :root {
-  --grey-color: #eee;
-  --grey-dark: #333;
-  --light-color: #fff;
-
+  --grey-color: #dddddd;
+  --grey-dark-color: #333333;
+  --light-color: #eeeeee;
+  --black-color: #000000;
+  --red-color: #ff0000;
+  --white-color: #ffffff;
 }
+
 body {
+  font-family: 'JetBrains Mono', monospace;
   background: var(--grey-color);
-  color: var(--grey-dark);
+  color: var(--grey-dark-color);
   padding: 0;
   margin: 0;
   width: 100%;
@@ -17,7 +21,7 @@ body {
 .genre-tag {
   padding: 4px 8px;
   border-radius: 4px;
-  border: 1px solid var(--grey-dark);
+  border: 1px solid var(--grey-dark-color);
   display: inline;
   font-size: 12px;
   font-weight: 700;
