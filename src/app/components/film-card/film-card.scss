@@ -16,10 +16,8 @@
     align-items: center;
   }
   &__poster {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    max-width: 400px;
     width: 100%;
-    overflow: hidden;
   }
   &:hover {
     transform: translateY(-10px) scale(1.02);
@@ -28,8 +26,10 @@
 }
 
 .poster-image {
-  max-width: 400px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   width: 100%;
+  overflow: hidden;
 }
 
 .card-title {
@@ -38,7 +38,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 28px;
-  line-height: 20px;
+  line-height: 25px;
   font-weight: 800;
   text-align: center;
   height: 50px;

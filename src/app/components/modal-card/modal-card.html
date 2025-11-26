@@ -4,14 +4,14 @@
 
         <img [src]="film.posterUrl" alt="poster" class="modal-poster">
         <div class="modal-detail">
-            <div class="detail-title">{{ film.title }}</div>
-            <div class="detail-year">{{ film.year }}</div>
-            <div class="detail-genres">
+            <div class="modal-detail__title">{{ film.title }}</div>
+            <div class="modal-detail__year">{{ film.year }}</div>
+            <div class="modal-detail__genres">
                 @for (genre of film.genres; track genre) {
                     <div class="genre">{{ genre }}</div>
                 }
             </div>
-                <div class="detail-description">{{film.description}}</div>
+                <div class="modal-detail__description">{{film.description}}</div>
             <button
                 class="modal-close"
                 (click)="modalService.close()"

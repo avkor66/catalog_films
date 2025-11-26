@@ -13,10 +13,34 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    &__title {
+      margin-top: 5px;
+      font-size: 28px;
+      font-weight: 800;
+      width: 90%;
+    }
+    &__year {
+      font-size: 22px;
+      line-height: 40px;
+    }
+    &__genres {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+    &__description {
+      font-weight: 400;
+      font-size: 18px;
+      text-align: justify;
+      width: 90%;
+    }
   }
   &-rating {
     position: absolute;
-    background: var(--grey-dark-color);
+    background: var(--grey-color);
     bottom: 10px;
     right: 10px;
     border-radius: 5px;
@@ -51,35 +75,8 @@
   }
 }
 
-.detail {
-  &-title {
-    margin-top: 5px;
-    font-size: 28px;
-    font-weight: 800;
-    width: 90%;
-  }
-  &-year {
-    font-size: 22px;
-    line-height: 40px;
-  }
-  &-genres {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-weight: 300;
-  }
-  &-description {
-    font-weight: 400;
-    font-size: 18px;
-    text-align: justify;
-    width: 90%;
-  }
-}
-
 .genre {
-  background: var(--green-color);
+  background: var(--grey-color);
   border-radius: 5px;
   padding: 7px;
   line-height: 10px;
@@ -93,6 +90,23 @@
       align-items: center;
       justify-content: start;
       margin-bottom: 30px;
+    }
+    &-detail {
+      &__title {
+        font-size: 22px;
+        width: 100%;
+        text-align: center;
+      }
+      &__year {
+        font-size: 18px;
+        text-align: center;
+      }
+      &__genres {
+        font-size: 14px;
+      }
+      &__description {
+        font-size: 14px;
+      }
     }
     &-poster {
       width: auto;
@@ -110,23 +124,6 @@
       font-size: 18px;
       line-height: 10px;
       padding: 10px 20px;
-    }
-  }
-  .detail {
-    &-title {
-      font-size: 22px;
-      width: 100%;
-      text-align: center;
-    }
-    &-year {
-      font-size: 18px;
-      text-align: center;
-    }
-    &-genres {
-      font-size: 14px;
-    }
-    &-description {
-      font-size: 14px;
     }
   }
 }

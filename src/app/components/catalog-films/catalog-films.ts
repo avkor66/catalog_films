@@ -2,7 +2,7 @@ import {Component, inject, OnInit} from '@angular/core';
 import {FilmCard} from "../film-card/film-card";
 import {FilmService} from "../../services/film.service";
 import {Film} from "../../interfaces/film.interface";
-import {Observable} from "rxjs";
+import {Observable, tap} from "rxjs";
 import {AsyncPipe} from "@angular/common";
 import {ErrorHandler} from "../error-handler/error-handler";
 import {FormsModule} from "@angular/forms";

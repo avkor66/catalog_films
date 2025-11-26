@@ -1,5 +1,5 @@
 .catalog  {
-  &__wrapper {
+  &-wrapper {
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -7,20 +7,20 @@
     margin: 20px;
     position: relative;
   }
-  &-header {
+  &__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    &__title {
+    &-title {
       font-size: 3rem;
       font-weight: 900;
     }
-    &__search {
+    &-search {
       text-align: right;
     }
   }
-  &-content {
+  &__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     grid-gap: 30px;
@@ -38,17 +38,17 @@
 
 @media (max-width: 1050px) {
   .catalog {
-    &-content {
+    &__content {
       grid-template-columns: repeat(auto-fit, minmax(400px, auto));
       justify-content: space-evenly;
     }
-    &-header {
+    &__header {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(400px, auto));
       justify-content: space-evenly;
       grid-gap: 20px;
       grid-auto-flow: dense;
-      &__title {
+      &-title {
         font-size: 2.5rem;
       }
     }
@@ -57,12 +57,12 @@
 
 @media (max-width: 900px) {
   .catalog {
-    &-content {
+    &__content {
       grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     }
-    &-header {
+    &__header {
       grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      &__title {
+      &-title {
         font-size: 2rem;
       }
     }
@@ -71,12 +71,12 @@
 
 @media (max-width: 719px) {
   .catalog {
-    &-content {
+    &__content {
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
     }
-    &-header {
+    &__header {
       grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-      &__title {
+      &-title {
         font-size: 1.5rem;
       }
     }
@@ -85,20 +85,20 @@
 
 @media (max-width: 499px) {
   .catalog {
-    &__wrapper {
+    &-wrapper {
       padding: 0;
     }
-    &-content {
+    &__content {
       grid-template-columns: 1fr;
       gap: 10px;
     }
-    &-header {
+    &__header {
       grid-template-columns: 1fr;
       grid-gap: 5px;
-      &__title {
+      &-title {
         font-size: 1.8rem;
       }
-      &__search {
+      &-search {
         text-align: left;
       }
     }

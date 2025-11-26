@@ -1,8 +1,8 @@
-<div class="catalog__wrapper">
+<div class="catalog-wrapper">
     <app-error-handler></app-error-handler>
-    <div class="catalog-header">
-        <div class="catalog-header__title">Каталог фильмов</div>
-        <div class="catalog-header__search">
+    <header class="catalog__header">
+        <div class="catalog__header-title">Каталог фильмов</div>
+        <div class="catalog__header-search">
             <input
                 type="text"
                 placeholder="Поиск фильмов..."
@@ -10,19 +10,21 @@
                 [(ngModel)]="seek"
             >
         </div>
-    </div>
+    </header>
+
     @let currentFilms = films$ | async;
     @if (currentFilms) {
-        <div class="catalog-content">
+        <section class="catalog__content">
             @for (film of currentFilms | filterFilms: seek; track film.id) {
                 <app-film-card
                     [film]="film"
                 ></app-film-card>
             }
-        </div>
+        </section>
     } @else {
-        <h3>Фильмы не найдены...</h3>
+        <h3>Поиск фильмов...</h3>
     }
+
     @if ( modalService.isVisible$ | async ) {
         <app-modal>
             <app-modal-card></app-modal-card>
