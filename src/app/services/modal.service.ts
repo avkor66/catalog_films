@@ -1,4 +1,4 @@
-import {inject, Injectable} from '@angular/core';
+import {inject, Injectable, Provider} from '@angular/core';
 import {BehaviorSubject, filter, map, Observable, switchMap} from "rxjs";
 import {FilmService} from "./film.service";
 import {Film} from "../interfaces/film.interface";
@@ -21,9 +21,10 @@ export class ModalService {
     ))
   )
 
-  open(event: any) {
-    const targetButton = event.currentTarget.dataset as HTMLButtonElement;
-    this.filmId.next(targetButton.id)
+  open(event: Event) {
+    const targetElement = event.currentTarget as HTMLElement;
+    const dataSet = targetElement.dataset;
+    this.filmId.next(dataSet['id'])
 
     this.isVisible$.next(true);
   }
